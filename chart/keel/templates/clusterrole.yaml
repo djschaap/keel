@@ -19,6 +19,15 @@ rules:
       - get
       - watch
       - list
+      - create
+      - update
+  - apiGroups:
+      - ""
+    resources:
+      - services
+      - serviceaccounts
+    verbs:
+      - get
   - apiGroups:
       - ""
       - extensions
