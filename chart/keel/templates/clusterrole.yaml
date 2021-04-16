@@ -57,4 +57,18 @@ rules:
       - get
       - create
       - update
+  - apiGroups:
+      - "policy"
+    resources:
+      - podsecuritypolicies
+    verbs:
+      - get
+      - update
+  - apiGroups:
+      - "rbac.authorization.k8s.io"
+    resources:
+      - rolebindings
+      - roles
+    verbs:
+      - get
 {{ end }}
